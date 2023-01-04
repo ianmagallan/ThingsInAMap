@@ -1,0 +1,24 @@
+PODS:
+  - GoogleMaps (7.1.0):
+    - GoogleMaps/Maps (= 7.1.0)
+  - GoogleMaps/Base (7.1.0)
+  - GoogleMaps/Maps (7.1.0):
+    - GoogleMaps/Base
+  - Nimble (11.2.1)
+
+DEPENDENCIES:
+  - GoogleMaps (= 7.1.0)
+  - Nimble
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - Nimble
+
+SPEC CHECKSUMS:
+  GoogleMaps: bc56ffb0324e345a2d91bac1a64a920f9c8f1b20
+  Nimble: 516ac503a0fafaa8e41dbb4a70a61be421fa893a
+
+PODFILE CHECKSUM: 77e4de7088a3b4317c2b5dc6262d80960841263b
+
+COCOAPODS: 1.10.1

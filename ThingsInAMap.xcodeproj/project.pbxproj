@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45FCCF77041CD704375BFFA8 /* Pods_ThingsInAMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB4C1942304D09E8B0023351 /* Pods_ThingsInAMapTests.framework */; };
+		5110C614295EE2C8006B454C /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C613295EE2C8006B454C /* MainView.swift */; };
+		5110C616295EE2D1006B454C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C615295EE2D1006B454C /* MainViewModel.swift */; };
+		5110C61A295F6D1D006B454C /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C619295F6D1D006B454C /* RequestFactory.swift */; };
+		5110C61D295F7220006B454C /* ExecutorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C61C295F7220006B454C /* ExecutorTest.swift */; };
+		5110C620295F7356006B454C /* Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C61F295F7356006B454C /* Stub.swift */; };
+		5110C622295F7A6F006B454C /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C621295F7A6F006B454C /* Session.swift */; };
+		5110C624295F7BB1006B454C /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C623295F7BB1006B454C /* MockSession.swift */; };
+		5110C62629609CDF006B454C /* MockHttpExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C62529609CDF006B454C /* MockHttpExecutor.swift */; };
+		5110C6282961B1E5006B454C /* PointOfInterestProviderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C6272961B1E5006B454C /* PointOfInterestProviderTest.swift */; };
+		5110C62A2961B3CA006B454C /* PointOfInterestConverterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C6292961B3CA006B454C /* PointOfInterestConverterTest.swift */; };
+		5110C62D2961B6F7006B454C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C62C2961B6F7006B454C /* MapView.swift */; };
+		5110C6302961C6D3006B454C /* String+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C62F2961C6D3006B454C /* String+UIImage.swift */; };
+		5110C6322961C9C8006B454C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C6312961C9C8006B454C /* AppDelegate.swift */; };
+		5110C6342961EE24006B454C /* ObservableCoordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C6332961EE24006B454C /* ObservableCoordinate.swift */; };
+		5110C6362962014E006B454C /* UIImage+flippedHorizontally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C6352962014E006B454C /* UIImage+flippedHorizontally.swift */; };
+		5110C63929620312006B454C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C63829620312006B454C /* Storage.swift */; };
+		5110C63C29620888006B454C /* CLLocationCoordinate2D+distanceInMeters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C63B29620888006B454C /* CLLocationCoordinate2D+distanceInMeters.swift */; };
+		5110C63E29620A1E006B454C /* PointOfInterestRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C63D29620A1E006B454C /* PointOfInterestRow.swift */; };
+		5110C64129620BC5006B454C /* PointOfInterestRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5110C64029620BC5006B454C /* PointOfInterestRowViewModel.swift */; };
+		5173D83C295DB7B6000E4B8F /* ThingsInAMapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173D83B295DB7B6000E4B8F /* ThingsInAMapApp.swift */; };
+		5173D840295DB7B8000E4B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5173D83F295DB7B8000E4B8F /* Assets.xcassets */; };
+		5173D843295DB7B8000E4B8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5173D842295DB7B8000E4B8F /* Preview Assets.xcassets */; };
+		5173D86A295DBEE3000E4B8F /* CoordinateDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173D869295DBEE3000E4B8F /* CoordinateDTO.swift */; };
+		5173D86C295DBF23000E4B8F /* PointOfInterestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173D86B295DBF23000E4B8F /* PointOfInterestDTO.swift */; };
+		5173D86E295DBFBF000E4B8F /* PointsOfInterestDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173D86D295DBFBF000E4B8F /* PointsOfInterestDTO.swift */; };
+		5173D871295DC013000E4B8F /* PointOfInterestConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173D870295DC013000E4B8F /* PointOfInterestConverter.swift */; };
+		5173D873295DC060000E4B8F /* PointOfInterest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173D872295DC060000E4B8F /* PointOfInterest.swift */; };
+		5173D876295DC214000E4B8F /* PointOfInterestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173D875295DC214000E4B8F /* PointOfInterestProvider.swift */; };
+		5173D878295DC3DD000E4B8F /* HttpExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5173D877295DC3DD000E4B8F /* HttpExecutor.swift */; };
+		51F1BFDA2962D8EE00372A75 /* Geocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BFD92962D8EE00372A75 /* Geocoder.swift */; };
+		51F1BFDC2962D94200372A75 /* MockGeocoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BFDB2962D94200372A75 /* MockGeocoder.swift */; };
+		51F1BFDF2962DA2A00372A75 /* PointOfInterestRowViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BFDE2962DA2A00372A75 /* PointOfInterestRowViewModelTest.swift */; };
+		51F1BFE12962E1B400372A75 /* MainViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BFE02962E1B400372A75 /* MainViewModelTest.swift */; };
+		51F1BFE32962E1FD00372A75 /* MockStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BFE22962E1FD00372A75 /* MockStorage.swift */; };
+		51F1BFE52962E6AB00372A75 /* MockPointOfInterestProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51F1BFE42962E6AB00372A75 /* MockPointOfInterestProvider.swift */; };
+		A3DBDC9D329ED38B4D2CEA7F /* Pods_ThingsInAMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66FEFE6A5A66D0435BA4DC92 /* Pods_ThingsInAMap.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5173D849295DB7B9000E4B8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5173D830295DB7B5000E4B8F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5173D837295DB7B6000E4B8F;
+			remoteInfo = ThingsInAMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F82303888A52F39FD4DC517 /* Pods-ThingsInAMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingsInAMap.debug.xcconfig"; path = "Target Support Files/Pods-ThingsInAMap/Pods-ThingsInAMap.debug.xcconfig"; sourceTree = "<group>"; };
+		5110C613295EE2C8006B454C /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		5110C615295EE2D1006B454C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		5110C617295EEBE4006B454C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5110C619295F6D1D006B454C /* RequestFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		5110C61C295F7220006B454C /* ExecutorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExecutorTest.swift; sourceTree = "<group>"; };
+		5110C61F295F7356006B454C /* Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stub.swift; sourceTree = "<group>"; };
+		5110C621295F7A6F006B454C /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		5110C623295F7BB1006B454C /* MockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
+		5110C62529609CDF006B454C /* MockHttpExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHttpExecutor.swift; sourceTree = "<group>"; };
+		5110C6272961B1E5006B454C /* PointOfInterestProviderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestProviderTest.swift; sourceTree = "<group>"; };
+		5110C6292961B3CA006B454C /* PointOfInterestConverterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestConverterTest.swift; sourceTree = "<group>"; };
+		5110C62C2961B6F7006B454C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		5110C62F2961C6D3006B454C /* String+UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIImage.swift"; sourceTree = "<group>"; };
+		5110C6312961C9C8006B454C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5110C6332961EE24006B454C /* ObservableCoordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableCoordinate.swift; sourceTree = "<group>"; };
+		5110C6352962014E006B454C /* UIImage+flippedHorizontally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+flippedHorizontally.swift"; sourceTree = "<group>"; };
+		5110C63829620312006B454C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		5110C63B29620888006B454C /* CLLocationCoordinate2D+distanceInMeters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+distanceInMeters.swift"; sourceTree = "<group>"; };
+		5110C63D29620A1E006B454C /* PointOfInterestRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestRow.swift; sourceTree = "<group>"; };
+		5110C64029620BC5006B454C /* PointOfInterestRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestRowViewModel.swift; sourceTree = "<group>"; };
+		5173D838295DB7B6000E4B8F /* ThingsInAMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThingsInAMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5173D83B295DB7B6000E4B8F /* ThingsInAMapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThingsInAMapApp.swift; sourceTree = "<group>"; };
+		5173D83F295DB7B8000E4B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5173D842295DB7B8000E4B8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5173D848295DB7B9000E4B8F /* ThingsInAMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ThingsInAMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5173D869295DBEE3000E4B8F /* CoordinateDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateDTO.swift; sourceTree = "<group>"; };
+		5173D86B295DBF23000E4B8F /* PointOfInterestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestDTO.swift; sourceTree = "<group>"; };
+		5173D86D295DBFBF000E4B8F /* PointsOfInterestDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsOfInterestDTO.swift; sourceTree = "<group>"; };
+		5173D870295DC013000E4B8F /* PointOfInterestConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestConverter.swift; sourceTree = "<group>"; };
+		5173D872295DC060000E4B8F /* PointOfInterest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterest.swift; sourceTree = "<group>"; };
+		5173D875295DC214000E4B8F /* PointOfInterestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestProvider.swift; sourceTree = "<group>"; };
+		5173D877295DC3DD000E4B8F /* HttpExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpExecutor.swift; sourceTree = "<group>"; };
+		51F1BFD92962D8EE00372A75 /* Geocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geocoder.swift; sourceTree = "<group>"; };
+		51F1BFDB2962D94200372A75 /* MockGeocoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGeocoder.swift; sourceTree = "<group>"; };
+		51F1BFDE2962DA2A00372A75 /* PointOfInterestRowViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointOfInterestRowViewModelTest.swift; sourceTree = "<group>"; };
+		51F1BFE02962E1B400372A75 /* MainViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTest.swift; sourceTree = "<group>"; };
+		51F1BFE22962E1FD00372A75 /* MockStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockStorage.swift; sourceTree = "<group>"; };
+		51F1BFE42962E6AB00372A75 /* MockPointOfInterestProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPointOfInterestProvider.swift; sourceTree = "<group>"; };
+		66FEFE6A5A66D0435BA4DC92 /* Pods_ThingsInAMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThingsInAMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0075004D038CF4F4BB2B592 /* Pods-ThingsInAMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingsInAMap.release.xcconfig"; path = "Target Support Files/Pods-ThingsInAMap/Pods-ThingsInAMap.release.xcconfig"; sourceTree = "<group>"; };
+		E001E345C2D627CB930D590E /* Pods-ThingsInAMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingsInAMapTests.release.xcconfig"; path = "Target Support Files/Pods-ThingsInAMapTests/Pods-ThingsInAMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		E0DE80FFDBFBBE57F6AA5D90 /* Pods-ThingsInAMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThingsInAMapTests.debug.xcconfig"; path = "Target Support Files/Pods-ThingsInAMapTests/Pods-ThingsInAMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB4C1942304D09E8B0023351 /* Pods_ThingsInAMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThingsInAMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5173D835295DB7B6000E4B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3DBDC9D329ED38B4D2CEA7F /* Pods_ThingsInAMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5173D845295DB7B9000E4B8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45FCCF77041CD704375BFFA8 /* Pods_ThingsInAMapTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5110C611295EE2A6006B454C /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5110C612295EE2B4006B454C /* Main */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5110C612295EE2B4006B454C /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5110C613295EE2C8006B454C /* MainView.swift */,
+				5110C615295EE2D1006B454C /* MainViewModel.swift */,
+				5110C62B2961B6E6006B454C /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5110C618295F6CF3006B454C /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				5110C619295F6D1D006B454C /* RequestFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		5110C61B295F720E006B454C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5110C61C295F7220006B454C /* ExecutorTest.swift */,
+				5110C6272961B1E5006B454C /* PointOfInterestProviderTest.swift */,
+				5110C6292961B3CA006B454C /* PointOfInterestConverterTest.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5110C61E295F7349006B454C /* Stub */ = {
+			isa = PBXGroup;
+			children = (
+				51F1BFDB2962D94200372A75 /* MockGeocoder.swift */,
+				5110C62529609CDF006B454C /* MockHttpExecutor.swift */,
+				51F1BFE42962E6AB00372A75 /* MockPointOfInterestProvider.swift */,
+				5110C623295F7BB1006B454C /* MockSession.swift */,
+				51F1BFE22962E1FD00372A75 /* MockStorage.swift */,
+				5110C61F295F7356006B454C /* Stub.swift */,
+			);
+			path = Stub;
+			sourceTree = "<group>";
+		};
+		5110C62B2961B6E6006B454C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5110C63F29620BB0006B454C /* PointOfInterestRow */,
+				5110C62C2961B6F7006B454C /* MapView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5110C62E2961C68C006B454C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5110C62F2961C6D3006B454C /* String+UIImage.swift */,
+				5110C6352962014E006B454C /* UIImage+flippedHorizontally.swift */,
+				5110C63B29620888006B454C /* CLLocationCoordinate2D+distanceInMeters.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5110C63729620306006B454C /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				5110C63829620312006B454C /* Storage.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		5110C63F29620BB0006B454C /* PointOfInterestRow */ = {
+			isa = PBXGroup;
+			children = (
+				5110C63D29620A1E006B454C /* PointOfInterestRow.swift */,
+				5110C64029620BC5006B454C /* PointOfInterestRowViewModel.swift */,
+			);
+			path = PointOfInterestRow;
+			sourceTree = "<group>";
+		};
+		5173D82F295DB7B5000E4B8F = {
+			isa = PBXGroup;
+			children = (
+				5173D83A295DB7B6000E4B8F /* ThingsInAMap */,
+				5173D84B295DB7B9000E4B8F /* ThingsInAMapTests */,
+				5173D839295DB7B6000E4B8F /* Products */,
+				A2087FF9392251410C689C8D /* Pods */,
+				C4A1C97EFFB137D2C9DAA697 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5173D839295DB7B6000E4B8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5173D838295DB7B6000E4B8F /* ThingsInAMap.app */,
+				5173D848295DB7B9000E4B8F /* ThingsInAMapTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5173D83A295DB7B6000E4B8F /* ThingsInAMap */ = {
+			isa = PBXGroup;
+			children = (
+				5110C617295EEBE4006B454C /* Info.plist */,
+				5110C6312961C9C8006B454C /* AppDelegate.swift */,
+				5173D83B295DB7B6000E4B8F /* ThingsInAMapApp.swift */,
+				5173D83F295DB7B8000E4B8F /* Assets.xcassets */,
+				5173D865295DBEA6000E4B8F /* API */,
+				5110C62E2961C68C006B454C /* Extensions */,
+				5173D841295DB7B8000E4B8F /* Preview Content */,
+				5110C63729620306006B454C /* Storage */,
+				5110C611295EE2A6006B454C /* UI */,
+			);
+			path = ThingsInAMap;
+			sourceTree = "<group>";
+		};
+		5173D841295DB7B8000E4B8F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5173D842295DB7B8000E4B8F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5173D84B295DB7B9000E4B8F /* ThingsInAMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				5110C61B295F720E006B454C /* API */,
+				5110C61E295F7349006B454C /* Stub */,
+				51F1BFDD2962DA1200372A75 /* VIewModel */,
+			);
+			path = ThingsInAMapTests;
+			sourceTree = "<group>";
+		};
+		5173D865295DBEA6000E4B8F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				5173D86F295DBFFC000E4B8F /* Converters */,
+				5173D867295DBEBA000E4B8F /* DTOs */,
+				5173D868295DBEC9000E4B8F /* Entities */,
+				5110C618295F6CF3006B454C /* Factories */,
+				5173D866295DBEB3000E4B8F /* Providers */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		5173D866295DBEB3000E4B8F /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				51F1BFD92962D8EE00372A75 /* Geocoder.swift */,
+				5173D877295DC3DD000E4B8F /* HttpExecutor.swift */,
+				5173D875295DC214000E4B8F /* PointOfInterestProvider.swift */,
+				5110C621295F7A6F006B454C /* Session.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		5173D867295DBEBA000E4B8F /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				5173D869295DBEE3000E4B8F /* CoordinateDTO.swift */,
+				5173D86B295DBF23000E4B8F /* PointOfInterestDTO.swift */,
+				5173D86D295DBFBF000E4B8F /* PointsOfInterestDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		5173D868295DBEC9000E4B8F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				5173D872295DC060000E4B8F /* PointOfInterest.swift */,
+				5110C6332961EE24006B454C /* ObservableCoordinate.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		5173D86F295DBFFC000E4B8F /* Converters */ = {
+			isa = PBXGroup;
+			children = (
+				5173D870295DC013000E4B8F /* PointOfInterestConverter.swift */,
+			);
+			path = Converters;
+			sourceTree = "<group>";
+		};
+		51F1BFDD2962DA1200372A75 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				51F1BFE02962E1B400372A75 /* MainViewModelTest.swift */,
+				51F1BFDE2962DA2A00372A75 /* PointOfInterestRowViewModelTest.swift */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		A2087FF9392251410C689C8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F82303888A52F39FD4DC517 /* Pods-ThingsInAMap.debug.xcconfig */,
+				A0075004D038CF4F4BB2B592 /* Pods-ThingsInAMap.release.xcconfig */,
+				E0DE80FFDBFBBE57F6AA5D90 /* Pods-ThingsInAMapTests.debug.xcconfig */,
+				E001E345C2D627CB930D590E /* Pods-ThingsInAMapTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C4A1C97EFFB137D2C9DAA697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66FEFE6A5A66D0435BA4DC92 /* Pods_ThingsInAMap.framework */,
+				EB4C1942304D09E8B0023351 /* Pods_ThingsInAMapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5173D837295DB7B6000E4B8F /* ThingsInAMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5173D85C295DB7B9000E4B8F /* Build configuration list for PBXNativeTarget "ThingsInAMap" */;
+			buildPhases = (
+				11FEACC5A0C6C53FAFF68A56 /* [CP] Check Pods Manifest.lock */,
+				5173D834295DB7B6000E4B8F /* Sources */,
+				5173D835295DB7B6000E4B8F /* Frameworks */,
+				5173D836295DB7B6000E4B8F /* Resources */,
+				F2EE7CC76AAB8CBA35069C53 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThingsInAMap;
+			productName = ThingsInAMap;
+			productReference = 5173D838295DB7B6000E4B8F /* ThingsInAMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5173D847295DB7B9000E4B8F /* ThingsInAMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5173D85F295DB7B9000E4B8F /* Build configuration list for PBXNativeTarget "ThingsInAMapTests" */;
+			buildPhases = (
+				10FACF0BD2295863A9ABFA1D /* [CP] Check Pods Manifest.lock */,
+				5173D844295DB7B9000E4B8F /* Sources */,
+				5173D845295DB7B9000E4B8F /* Frameworks */,
+				5173D846295DB7B9000E4B8F /* Resources */,
+				01AF2C6E8CB9C85C0A7605EA /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5173D84A295DB7B9000E4B8F /* PBXTargetDependency */,
+			);
+			name = ThingsInAMapTests;
+			productName = ThingsInAMapTests;
+			productReference = 5173D848295DB7B9000E4B8F /* ThingsInAMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5173D830295DB7B5000E4B8F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					5173D837295DB7B6000E4B8F = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					5173D847295DB7B9000E4B8F = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 5173D837295DB7B6000E4B8F;
+					};
+				};
+			};
+			buildConfigurationList = 5173D833295DB7B5000E4B8F /* Build configuration list for PBXProject "ThingsInAMap" */;
+			compatibilityVersion = "Xcode 12.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5173D82F295DB7B5000E4B8F;
+			productRefGroup = 5173D839295DB7B6000E4B8F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5173D837295DB7B6000E4B8F /* ThingsInAMap */,
+				5173D847295DB7B9000E4B8F /* ThingsInAMapTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5173D836295DB7B6000E4B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5173D843295DB7B8000E4B8F /* Preview Assets.xcassets in Resources */,
+				5173D840295DB7B8000E4B8F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5173D846295DB7B9000E4B8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01AF2C6E8CB9C85C0A7605EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThingsInAMapTests/Pods-ThingsInAMapTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThingsInAMapTests/Pods-ThingsInAMapTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThingsInAMapTests/Pods-ThingsInAMapTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		10FACF0BD2295863A9ABFA1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThingsInAMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11FEACC5A0C6C53FAFF68A56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThingsInAMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2EE7CC76AAB8CBA35069C53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThingsInAMap/Pods-ThingsInAMap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThingsInAMap/Pods-ThingsInAMap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThingsInAMap/Pods-ThingsInAMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5173D834295DB7B6000E4B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5110C63E29620A1E006B454C /* PointOfInterestRow.swift in Sources */,
+				5110C6302961C6D3006B454C /* String+UIImage.swift in Sources */,
+				5110C61A295F6D1D006B454C /* RequestFactory.swift in Sources */,
+				5110C63C29620888006B454C /* CLLocationCoordinate2D+distanceInMeters.swift in Sources */,
+				5110C6342961EE24006B454C /* ObservableCoordinate.swift in Sources */,
+				51F1BFDA2962D8EE00372A75 /* Geocoder.swift in Sources */,
+				5110C6362962014E006B454C /* UIImage+flippedHorizontally.swift in Sources */,
+				5110C62D2961B6F7006B454C /* MapView.swift in Sources */,
+				5110C63929620312006B454C /* Storage.swift in Sources */,
+				5110C6322961C9C8006B454C /* AppDelegate.swift in Sources */,
+				5173D878295DC3DD000E4B8F /* HttpExecutor.swift in Sources */,
+				5173D876295DC214000E4B8F /* PointOfInterestProvider.swift in Sources */,
+				5173D873295DC060000E4B8F /* PointOfInterest.swift in Sources */,
+				5173D86E295DBFBF000E4B8F /* PointsOfInterestDTO.swift in Sources */,
+				5110C64129620BC5006B454C /* PointOfInterestRowViewModel.swift in Sources */,
+				5173D86A295DBEE3000E4B8F /* CoordinateDTO.swift in Sources */,
+				5173D871295DC013000E4B8F /* PointOfInterestConverter.swift in Sources */,
+				5110C616295EE2D1006B454C /* MainViewModel.swift in Sources */,
+				5110C622295F7A6F006B454C /* Session.swift in Sources */,
+				5110C614295EE2C8006B454C /* MainView.swift in Sources */,
+				5173D83C295DB7B6000E4B8F /* ThingsInAMapApp.swift in Sources */,
+				5173D86C295DBF23000E4B8F /* PointOfInterestDTO.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5173D844295DB7B9000E4B8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51F1BFDC2962D94200372A75 /* MockGeocoder.swift in Sources */,
+				5110C61D295F7220006B454C /* ExecutorTest.swift in Sources */,
+				5110C620295F7356006B454C /* Stub.swift in Sources */,
+				5110C62629609CDF006B454C /* MockHttpExecutor.swift in Sources */,
+				51F1BFE12962E1B400372A75 /* MainViewModelTest.swift in Sources */,
+				51F1BFE32962E1FD00372A75 /* MockStorage.swift in Sources */,
+				5110C624295F7BB1006B454C /* MockSession.swift in Sources */,
+				5110C62A2961B3CA006B454C /* PointOfInterestConverterTest.swift in Sources */,
+				51F1BFE52962E6AB00372A75 /* MockPointOfInterestProvider.swift in Sources */,
+				5110C6282961B1E5006B454C /* PointOfInterestProviderTest.swift in Sources */,
+				51F1BFDF2962DA2A00372A75 /* PointOfInterestRowViewModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5173D84A295DB7B9000E4B8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5173D837295DB7B6000E4B8F /* ThingsInAMap */;
+			targetProxy = 5173D849295DB7B9000E4B8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5173D85A295DB7B9000E4B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5173D85B295DB7B9000E4B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5173D85D295DB7B9000E4B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F82303888A52F39FD4DC517 /* Pods-ThingsInAMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThingsInAMap/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThingsInAMap/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location needed to show address names";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ianmagallan.ThingsInAMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5173D85E295DB7B9000E4B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0075004D038CF4F4BB2B592 /* Pods-ThingsInAMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ThingsInAMap/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ThingsInAMap/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Location needed to show address names";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ianmagallan.ThingsInAMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5173D860295DB7B9000E4B8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0DE80FFDBFBBE57F6AA5D90 /* Pods-ThingsInAMapTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ianmagallan.ThingsInAMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThingsInAMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThingsInAMap";
+			};
+			name = Debug;
+		};
+		5173D861295DB7B9000E4B8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E001E345C2D627CB930D590E /* Pods-ThingsInAMapTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ianmagallan.ThingsInAMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ThingsInAMap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ThingsInAMap";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5173D833295DB7B5000E4B8F /* Build configuration list for PBXProject "ThingsInAMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5173D85A295DB7B9000E4B8F /* Debug */,
+				5173D85B295DB7B9000E4B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5173D85C295DB7B9000E4B8F /* Build configuration list for PBXNativeTarget "ThingsInAMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5173D85D295DB7B9000E4B8F /* Debug */,
+				5173D85E295DB7B9000E4B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5173D85F295DB7B9000E4B8F /* Build configuration list for PBXNativeTarget "ThingsInAMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5173D860295DB7B9000E4B8F /* Debug */,
+				5173D861295DB7B9000E4B8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5173D830295DB7B5000E4B8F /* Project object */;
+}
